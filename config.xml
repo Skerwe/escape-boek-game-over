@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="nl.indiesagtewerke.escapeboek" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>EscapeBoek</name>
+    <description>Escape Boek Game Over digital inventaris</description>
+    <author email="dev@cordova.apache.org" href="https://indiesagtewerke.nl">
+        IndieSagtewerke Team
+    </author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+</widget>
