@@ -100,8 +100,8 @@ export default {
 </script>
 
 <template>
-  <main class="container mx-5">
-    <h2 class="title is-4 has-text-centered mt-3 mb-2">Inventaris</h2>
+  <main class="mx-5 mt-3 mb-5">
+    <h2 class="title is-4 has-text-centered mt-2 mb-4">Inventaris</h2>
     <div class="columns is-gapless">
       <div class="column">
 

@@ -6,7 +6,7 @@ import router from './router'
 
 import 'normalize.css'
 import 'bulma/css/bulma.css'
-import './assets/main.css'
+import './assets/css/main.css'
 
 const app = createApp(App)
 
