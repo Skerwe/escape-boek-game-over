@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="nl.indiesagtewerke.escapeboek" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>EscapeBoek</name>
-    <description>Escape Boek Game Over digital inventaris</description>
-    <author email="dev@cordova.apache.org" href="https://indiesagtewerke.nl">
-        IndieSagtewerke Team
+<widget id="nl.indiesagtewerke.escapeboek.gameover" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>EscapeBoekGameOver</name>
+    <description>Escape Boek: Game Over digital inventory.</description>
+    <author email="dev@cordova.apache.org" href="http://indiesagtewerke.nl">
+        IndieSagtewerke
     </author>
     <content src="index.html" />
     <allow-intent href="http://*/*" />

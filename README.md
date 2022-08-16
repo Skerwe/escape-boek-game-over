@@ -11,7 +11,7 @@
                       |_|
 ```
 
-> A digital invintory mobile application to accompany the book.
+> This is a digital inventory companion mobile application.
 
 ## About
 
@@ -39,6 +39,7 @@ You should install Apache Cordova globally, `npm install -g cordova`
 
 - [Vue 3](https://vuejs.org/)
 - [Vite](https://vitejs.dev/)
+- [Bulma](https://bulma.io/)
 - [Cordova][cordova]
 
 ## Recommended IDE Setup

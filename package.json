@@ -2,8 +2,9 @@
   "name": "escape-boek-game-over",
   "displayName": "EscapeBoekGameOver",
   "version": "0.1.0",
-  "description": "Escape Boek Game Over digital inventaris.",
   "private": "true",
+  "description": "This is a digital inventory companion mobile application for the book 'Escape Boek: Game Over'.",
+  "author": "Indie Sagtewerke (http://indiesagtewerke.nl)",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -16,7 +17,6 @@
   "keywords": [
     "ecosystem:cordova"
   ],
-  "author": "IndieSagtewerke Team",
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "bulma": "^0.9.4",
