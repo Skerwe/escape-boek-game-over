@@ -6,6 +6,16 @@
     Author's custom styles
     ========================================================================== */
 
+  @font-face {
+    font-family: "Lato";
+    src: local("Lato"), url("./../fonts/Lato/Lato-Black.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Roboto_Mono";
+    src: local("Roboto_Mono"), url("./../fonts/Roboto_Mono/static/RobotoMono-Bold.ttf") format("truetype");
+  }
+
   *,
   *::before,
   *::after {
@@ -20,10 +30,8 @@
     color: var(--color-text);
     background: var(--color-background);
     transition: color 0.5s, background-color 0.5s;
-    line-height: 1.6;
     font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
       Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    font-size: 15px;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -37,4 +45,14 @@
 
   main {
     flex: 1;
+  }
+
+  a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
+    background-color: transparent;
+    color: var(--vt-c-black-soft);
+  }
+
+  h1, h2, .subtitle, nav, footer {
+    font-family: 'Lato', sans-serif;
+    color: var(--color-heading) !important;
   }

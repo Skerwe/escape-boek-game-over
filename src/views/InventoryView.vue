@@ -102,8 +102,8 @@ export default {
 <template>
   <main class="mx-5 mt-3 mb-5">
     <h2 class="title is-4 has-text-centered mt-2 mb-4">Inventaris</h2>
-    <div class="columns is-gapless">
-      <div class="column">
+    <div class="columns is-gapless is-centered">
+      <div class="column is-narrow">
 
         <div class="field" v-for="item in inventory">
           <div class="control">

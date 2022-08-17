@@ -4,9 +4,9 @@ import CurrentLocation from '@/components/CurrentLocation.vue';
 </script>
 
 <template>
-  <header class="has-text-centered" id="page-header">
-    <h1 class="title">Escape Boek</h1>
-    <div class="subtitle">Game Over</div>
+  <header class="has-text-centered mt-2" id="page-header">
+    <h1 class="title is-inline-block-desktop">Escape Boek</h1>
+    <div class="subtitle is-inline-block-desktop"><span class="is-invisible-touch">: </span>Game Over</div>
 
     <CurrentLocation />
 
