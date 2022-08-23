@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import CurrentLocation from '@/components/CurrentLocation.vue';
+import Location from '@/components/Location.vue';
 </script>
 
 <template>
@@ -8,7 +8,7 @@ import CurrentLocation from '@/components/CurrentLocation.vue';
     <h1 class="title is-inline-block-desktop">Escape Boek</h1>
     <div class="subtitle is-inline-block-desktop"><span class="is-invisible-touch">: </span>Game Over</div>
 
-    <CurrentLocation />
+    <Location />
 
     <nav class="level is-mobile has-background-light">
       <div class="level-item">

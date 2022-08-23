@@ -4,92 +4,92 @@
     {
       "handle": "handboeien",
       "description": "Elektrische handboeien",
-      "selected": false
+      "checked": false
     },
     {
       "handle": "plattegrond",
       "description": "Plattegrond",
-      "selected": false
+      "checked": false
     },
     {
       "handle": "batterij",
       "description": "Batterij",
-      "selected": false
+      "checked": false
     },
     {
       "handle": "sleutel",
       "description": "Metalen sleutel",
-      "selected": false
+      "checked": false
     },
     {
       "handle": "parachute",
       "description": "Aangedreven parachute",
-      "selected": false
+      "checked": false
     },
     {
       "handle": "snijgun",
       "description": "Snijgun",
-      "selected": false
+      "checked": false
     },
     {
       "handle": "steen",
       "description": "Gegraveerde steen",
-      "selected": false
+      "checked": false
     },
     {
       "handle": "schakelaar",
       "description": "Klein schakelaar",
-      "selected": false
+      "checked": false
     },
     {
       "handle": "wiwapenuitrusting",
       "description": "Wiwapenuitrusting",
-      "selected": false
+      "checked": false
     },
     {
       "handle": "ijsbron-extract",
       "description": "Ijsbron-extract",
-      "selected": false
+      "checked": false
     },
     {
       "handle": "vlampistool",
       "description": "Vlampistool",
-      "selected": false
+      "checked": false
     },
     {
       "handle": "energiebron-extract",
       "description": "Onreine energiebron-extract",
-      "selected": false
+      "checked": false
     },
     {
       "handle": "bol-der-leegte",
       "description": "Bol der leegte",
-      "selected": false
+      "checked": false
     },
     {
       "handle": "mechanisch-voorwerp",
       "description": "Vreemd mechanisch voorwerp",
-      "selected": false
+      "checked": false
     },
     {
       "handle": "energiekubus",
       "description": "Ontladen energiekubus",
-      "selected": false
+      "checked": false
     },
     {
       "handle": "ruimteboard",
       "description": "Ruimteboard",
-      "selected": false
+      "checked": false
     },
     {
       "handle": "energiekern",
       "description": "Energiekern",
-      "selected": false
+      "checked": false
     },
     {
       "handle": "zuivere-zip",
       "description": "Zuivere zip",
-      "selected": false
+      "checked": false
     }
   ]
 }
