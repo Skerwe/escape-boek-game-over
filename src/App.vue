@@ -28,10 +28,11 @@ import CurrentLocation from "@/components/CurrentLocation.vue";
     <div class="content has-text-centered">
       <p>
         <strong>Inventory Companion</strong>
-        <span class="is-size-7">v0.1.0</span>
+        <span class="is-size-7 ml-1">v0.1.0</span>
       </p>
     </div>
   </footer>
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>

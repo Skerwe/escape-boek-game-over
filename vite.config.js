@@ -4,13 +4,7 @@ import path from "path";
 
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-
-console.log(
-  path.resolve(
-    path.dirname(fileURLToPath(import.meta.url)),
-    "public/cordova.js"
-  )
-);
+import del from "rollup-plugin-delete";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -20,15 +14,18 @@ export default defineConfig({
       external: [
         path.resolve(
           path.dirname(fileURLToPath(import.meta.url)),
-          "/public/cordova.js"
-        ),
+          "public/cordova.js"
+        )
       ],
-    },
+      plugins: [
+        del({ targets: "www/cordova.js", hook: "generateBundle" })
+      ]
+    }
   },
   plugins: [vue()],
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
-    },
-  },
+    }
+  }
 });

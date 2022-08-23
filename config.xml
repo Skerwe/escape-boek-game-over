@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="nl.indiesagtewerke.escapeboek.gameover" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>EscapeBoekGameOver</name>
-    <description>Escape Boek: Game Over digital inventory.</description>
+    <description>Escape Boek: Game Over digital inventory companion mobile application.</description>
     <author email="dev@cordova.apache.org" href="http://indiesagtewerke.nl">
         IndieSagtewerke
     </author>
