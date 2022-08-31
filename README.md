@@ -1,17 +1,17 @@
-# Escape Boek - Game Over
+# Escape Boek - Game Over: Inventory Companion
 
 ```text
-  ______                            ____             _                _____                         ____
- |  ____|                          |  _ \           | |              / ____|                       / __ \
- | |__   ___  ___ __ _ _ __   ___  | |_) | ___   ___| | __  ______  | |  __  __ _ _ __ ___   ___  | |  | |_   _____ _ __
- |  __| / __|/ __/ _` | '_ \ / _ \ |  _ < / _ \ / _ \ |/ / |______| | | |_ |/ _` | '_ ` _ \ / _ \ | |  | \ \ / / _ \ '__|
- | |____\__ \ (_| (_| | |_) |  __/ | |_) | (_) |  __/   <           | |__| | (_| | | | | | |  __/ | |__| |\ V /  __/ |
- |______|___/\___\__,_| .__/ \___| |____/ \___/ \___|_|\_\           \_____|\__,_|_| |_| |_|\___|  \____/  \_/ \___|_|
+  ______                            ____             _       _____                         ____
+ |  ____|                          |  _ \           | |     / ____|                       / __ \
+ | |__   ___  ___ __ _ _ __   ___  | |_) | ___   ___| | __ | |  __  __ _ _ __ ___   ___  | |  | |_   _____ _ __
+ |  __| / __|/ __/ _` | '_ \ / _ \ |  _ < / _ \ / _ \ |/ / | | |_ |/ _` | '_ ` _ \ / _ \ | |  | \ \ / / _ \ '__|
+ | |____\__ \ (_| (_| | |_) |  __/ | |_) | (_) |  __/   <  | |__| | (_| | | | | | |  __/ | |__| |\ V /  __/ |
+ |______|___/\___\__,_| .__/ \___| |____/ \___/ \___|_|\_\  \_____|\__,_|_| |_| |_|\___|  \____/  \_/ \___|_|
                       | |
                       |_|
 ```
 
-> This is a digital inventory companion mobile application.
+> This is a digital inventory companion mobile application for the choose your own adventure game book.
 
 ## About
 
@@ -90,5 +90,4 @@ npm run test:e2e # or `npm run test:e2e:ci` for headless testing
 npm run lint
 ```
 
-[github-ci-url]: https://github.com/Skerwe/markdown-documentation-library/workflows/Node.js%20CI/badge.svg?branch=master
 [cordova]: https://cordova.apache.org/

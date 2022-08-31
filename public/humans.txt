@@ -1,0 +1,20 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Indie Sagtewerk -- Software Development -- indiesagtewerke.com
+
+# THANKS
+
+    to all open source software
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, JavaScript
+    Modernizr, Normalize.css
+    VueJs, Vite, Pinia
+    IDB-Keyval, Bulma
+    NodeJs
+    Apache Cordova
+    VS Code

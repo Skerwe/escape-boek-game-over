@@ -19,7 +19,8 @@ export default defineConfig({
       ],
       plugins: [
         del({ targets: "www/cordova.js", hook: "generateBundle" })
-      ]
+      ],
+      output: { assetFileNames: "assets/[name]-[hash][extname]" }
     }
   },
   plugins: [vue()],
