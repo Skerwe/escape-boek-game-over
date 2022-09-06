@@ -34,5 +34,4 @@ import CurrentLocation from "@/components/CurrentLocation.vue";
   </footer>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>
