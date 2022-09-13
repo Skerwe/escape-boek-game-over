@@ -1,14 +1,14 @@
 # Escape Boek - Game Over: Inventory Companion
 
 ```text
-  ______                            ____             _       _____                         ____
- |  ____|                          |  _ \           | |     / ____|                       / __ \
- | |__   ___  ___ __ _ _ __   ___  | |_) | ___   ___| | __ | |  __  __ _ _ __ ___   ___  | |  | |_   _____ _ __
- |  __| / __|/ __/ _` | '_ \ / _ \ |  _ < / _ \ / _ \ |/ / | | |_ |/ _` | '_ ` _ \ / _ \ | |  | \ \ / / _ \ '__|
- | |____\__ \ (_| (_| | |_) |  __/ | |_) | (_) |  __/   <  | |__| | (_| | | | | | |  __/ | |__| |\ V /  __/ |
- |______|___/\___\__,_| .__/ \___| |____/ \___/ \___|_|\_\  \_____|\__,_|_| |_| |_|\___|  \____/  \_/ \___|_|
-                      | |
-                      |_|
+  _____                      _                      _____                                  _
+ |_   _|                    | |                    / ____|                                (_)
+   | |  _ ____   _____ _ __ | |_ ___  _ __ _   _  | |     ___  _ __ ___  _ __   __ _ _ __  _  ___  _ __
+   | | | '_ \ \ / / _ \ '_ \| __/ _ \| '__| | | | | |    / _ \| '_ ` _ \| '_ \ / _` | '_ \| |/ _ \| '_ \
+  _| |_| | | \ V /  __/ | | | || (_) | |  | |_| | | |___| (_) | | | | | | |_) | (_| | | | | | (_) | | | |
+ |_____|_| |_|\_/ \___|_| |_|\__\___/|_|   \__, |  \_____\___/|_| |_| |_| .__/ \__,_|_| |_|_|\___/|_| |_|
+                                            __/ |                       | |
+                                           |___/                        |_|
 ```
 
 > This is a digital inventory companion mobile application for the choose your own adventure game book.
@@ -47,7 +47,8 @@ You should install Apache Cordova globally, `npm install -g cordova`
 
 ## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+ (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
 ## Customize configuration
 
