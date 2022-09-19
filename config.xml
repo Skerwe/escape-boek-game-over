@@ -2,11 +2,12 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0"
 id="nl.indiesagtewerke.escapeboek.gameover"
 version="1.0.0"
-android-versionCode="1"
-android-packageName="indiesagtewerke.escapeboek.gameover.inventorycompanion">
+android-versionCode="10000"
+android-packageName="indiesagtewerke.escapeboek.gameover.inventorycompanion"
+android-activityName="Inventory Companion">
     <name short="Inventory Companion">Escape Boek Game Over - Inventory Companion</name>
     <description>Escape Boek Game Over digital inventory companion mobile application.</description>
-    <author email="dev@indiesagtewerke.nl" href="https://indiesagtewerke.nl">IndieSagtewerke</author>
+    <author email="support@indiesagtewerke.dev" href="https://indiesagtewerke.dev">IndieSagtewerke</author>
 
     <content src="index.html" />
     <allow-intent href="http://*/*" />
