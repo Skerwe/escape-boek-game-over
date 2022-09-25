@@ -1,14 +1,14 @@
 # Escape Boek - Game Over: Inventory Companion
 
 ```text
-  ______                            ____             _       _____                         ____
- |  ____|                          |  _ \           | |     / ____|                       / __ \
- | |__   ___  ___ __ _ _ __   ___  | |_) | ___   ___| | __ | |  __  __ _ _ __ ___   ___  | |  | |_   _____ _ __
- |  __| / __|/ __/ _` | '_ \ / _ \ |  _ < / _ \ / _ \ |/ / | | |_ |/ _` | '_ ` _ \ / _ \ | |  | \ \ / / _ \ '__|
- | |____\__ \ (_| (_| | |_) |  __/ | |_) | (_) |  __/   <  | |__| | (_| | | | | | |  __/ | |__| |\ V /  __/ |
- |______|___/\___\__,_| .__/ \___| |____/ \___/ \___|_|\_\  \_____|\__,_|_| |_| |_|\___|  \____/  \_/ \___|_|
-                      | |
-                      |_|
+  _____                      _                      _____                                  _
+ |_   _|                    | |                    / ____|                                (_)
+   | |  _ ____   _____ _ __ | |_ ___  _ __ _   _  | |     ___  _ __ ___  _ __   __ _ _ __  _  ___  _ __
+   | | | '_ \ \ / / _ \ '_ \| __/ _ \| '__| | | | | |    / _ \| '_ ` _ \| '_ \ / _` | '_ \| |/ _ \| '_ \
+  _| |_| | | \ V /  __/ | | | || (_) | |  | |_| | | |___| (_) | | | | | | |_) | (_| | | | | | (_) | | | |
+ |_____|_| |_|\_/ \___|_| |_|\__\___/|_|   \__, |  \_____\___/|_| |_| |_| .__/ \__,_|_| |_|_|\___/|_| |_|
+                                            __/ |                       | |
+                                           |___/                        |_|
 ```
 
 > This is a digital inventory companion mobile application for the choose your own adventure game book.
@@ -47,7 +47,8 @@ You should install Apache Cordova globally, `npm install -g cordova`
 
 ## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+ (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
 ## Customize configuration
 
@@ -55,39 +56,49 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
-```sh
+```shell
 npm install
 ```
 
 ### Compile and Hot-Reload for Development
 
-```sh
+```shell
 npm run dev
 ```
 
 ### Compile and Minify for Production
 
-```sh
+```shell
 npm run build
 ```
 
+## Testing
+
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
 
-```sh
+```shell
 npm run test:unit
 ```
 
 ### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
 
-```sh
+```shell
 npm run build
 npm run test:e2e # or `npm run test:e2e:ci` for headless testing
 ```
 
+## Linting
+
 ### Lint with [ESLint](https://eslint.org/)
 
-```sh
+```shell
 npm run lint
+```
+
+### Lint with [markdownlint](https://github.com/DavidAnson/markdownlint)
+
+```shell
+npm run lint:docs
 ```
 
 [cordova]: https://cordova.apache.org/

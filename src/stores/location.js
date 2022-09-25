@@ -1,6 +1,9 @@
 import { defineStore } from "pinia";
 import { get, set } from "idb-keyval";
-import { LOCATION_STORE_NAME } from "./store-names";
+import {
+  LOCATION_STORE_NAME,
+  MAX_LOCATION_VALUE,
+} from "./store-configurations";
 
 export const useLocationStore = defineStore({
   id: "location",
@@ -9,7 +12,7 @@ export const useLocationStore = defineStore({
   }),
   actions: {
     increment() {
-      if (this.location + 1 <= 20) {
+      if (this.location + 1 <= MAX_LOCATION_VALUE) {
         this.location++;
         this.save();
       }
@@ -20,10 +23,18 @@ export const useLocationStore = defineStore({
         this.save();
       }
     },
-    save() {
+    save(doneCallback, errorCallBack) {
       set(LOCATION_STORE_NAME, this.location)
-        .then(() => console.log("Location saved!"))
-        .catch((err) => console.log("Location save failed!", err));
+        .then(() => {
+          if (doneCallback) {
+            doneCallback();
+          }
+        })
+        .catch((error) => {
+          if (errorCallBack) {
+            errorCallBack(error);
+          }
+        });
     },
     load() {
       get(LOCATION_STORE_NAME).then((stateFromIndexedDB) => {

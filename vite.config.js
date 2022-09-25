@@ -15,18 +15,16 @@ export default defineConfig({
         path.resolve(
           path.dirname(fileURLToPath(import.meta.url)),
           "public/cordova.js"
-        )
+        ),
       ],
-      plugins: [
-        del({ targets: "www/cordova.js", hook: "generateBundle" })
-      ],
-      output: { assetFileNames: "assets/[name]-[hash][extname]" }
-    }
+      plugins: [del({ targets: "www/cordova.js", hook: "generateBundle" })],
+      output: { assetFileNames: "assets/[name]-[hash][extname]" },
+    },
   },
   plugins: [vue()],
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
-    }
-  }
+    },
+  },
 });

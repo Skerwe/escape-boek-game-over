@@ -1,6 +1,14 @@
-<script setup>
+<script>
 import { RouterLink, RouterView } from "vue-router";
 import CurrentLocation from "@/components/CurrentLocation.vue";
+
+export default {
+  components: {
+    RouterLink,
+    RouterView,
+    CurrentLocation
+  }
+}
 </script>
 
 <template>
@@ -35,4 +43,5 @@ import CurrentLocation from "@/components/CurrentLocation.vue";
 </template>
 
 <style scoped>
+
 </style>
