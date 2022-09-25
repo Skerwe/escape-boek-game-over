@@ -56,39 +56,49 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
-```sh
+```shell
 npm install
 ```
 
 ### Compile and Hot-Reload for Development
 
-```sh
+```shell
 npm run dev
 ```
 
 ### Compile and Minify for Production
 
-```sh
+```shell
 npm run build
 ```
 
+## Testing
+
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
 
-```sh
+```shell
 npm run test:unit
 ```
 
 ### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
 
-```sh
+```shell
 npm run build
 npm run test:e2e # or `npm run test:e2e:ci` for headless testing
 ```
 
+## Linting
+
 ### Lint with [ESLint](https://eslint.org/)
 
-```sh
+```shell
 npm run lint
+```
+
+### Lint with [markdownlint](https://github.com/DavidAnson/markdownlint)
+
+```shell
+npm run lint:docs
 ```
 
 [cordova]: https://cordova.apache.org/

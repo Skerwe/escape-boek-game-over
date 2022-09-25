@@ -14,7 +14,8 @@
     "test:e2e": "start-server-and-test preview http://localhost:4173/ 'cypress open --e2e'",
     "test:e2e:ci": "start-server-and-test preview http://localhost:4173/ 'cypress run --e2e'",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "lint:docs": "markdownlint-cli2 \"**/*.md\" \"#node_modules\""
+    "lint:docs": "markdownlint-cli2 \"**/*.md\" \"#node_modules\"",
+    "cypress:open": "cypress open"
   },
   "keywords": [
     "ecosystem:cordova"
@@ -35,7 +36,7 @@
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/test-utils": "^2.0.2",
     "cordova-android": "^11.0.0",
-    "cypress": "^10.3.0",
+    "cypress": "^10.8.0",
     "eslint": "^8.5.0",
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-vue": "^9.0.0",
