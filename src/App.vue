@@ -22,10 +22,10 @@ export default {
 
     <nav class="level is-mobile has-background-light">
       <div class="level-item">
-        <RouterLink class="navbar-item" to="/">Inventory</RouterLink>
+        <RouterLink class="navbar-item" to="/" id="home-page">Inventory</RouterLink>
       </div>
       <div class="level-item">
-        <RouterLink class="navbar-item" to="/about">About</RouterLink>
+        <RouterLink class="navbar-item" to="/about" id="about-page">About</RouterLink>
       </div>
     </nav>
   </header>

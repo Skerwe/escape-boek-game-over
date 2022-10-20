@@ -29,4 +29,9 @@ describe('routing', async () => {
   it("route to home page", () => {
     expect(wrapper.html()).toContain('Inventaris')
   });
+
+  it("route to about page", async () => {
+    await wrapper.find('a#about-page').trigger('click')
+    expect(wrapper.html()).toContain('Inventory Companion')
+  });
 })
