@@ -4,12 +4,13 @@ import path from "path";
 
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
+import copy from "rollup-plugin-copy";
 import del from "rollup-plugin-delete";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
-    outDir: "www",
+    outDir: "build",
     rollupOptions: {
       external: [
         path.resolve(
@@ -17,7 +18,10 @@ export default defineConfig({
           "public/cordova.js"
         ),
       ],
-      plugins: [del({ targets: "www/cordova.js", hook: "generateBundle" })],
+      plugins: [
+        copy({ targets: [{ src: 'build/*', dest: 'www' }], hook: 'generateBundle' }),
+        del({ targets: "www/cordova.js", hook: "writeBundle" })
+      ],
       output: { assetFileNames: "assets/[name]-[hash][extname]" },
     },
   },

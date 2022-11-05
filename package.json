@@ -45,6 +45,7 @@
     "markdownlint": "^0.26.2",
     "markdownlint-cli2": "^0.5.1",
     "prettier": "^2.5.1",
+    "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-delete": "^2.0.0",
     "start-server-and-test": "^1.14.0",
     "vite": "^3.0.1",
