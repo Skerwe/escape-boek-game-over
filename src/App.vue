@@ -6,9 +6,9 @@ export default {
   components: {
     RouterLink,
     RouterView,
-    CurrentLocation
-  }
-}
+    CurrentLocation,
+  },
+};
 </script>
 
 <template>
@@ -22,10 +22,14 @@ export default {
 
     <nav class="level is-mobile has-background-light">
       <div class="level-item">
-        <RouterLink class="navbar-item" to="/" id="home-page">Inventory</RouterLink>
+        <RouterLink class="navbar-item" to="/" id="home-page"
+          >Inventory</RouterLink
+        >
       </div>
       <div class="level-item">
-        <RouterLink class="navbar-item" to="/about" id="about-page">About</RouterLink>
+        <RouterLink class="navbar-item" to="/about" id="about-page"
+          >About</RouterLink
+        >
       </div>
     </nav>
   </header>
@@ -42,6 +46,4 @@ export default {
   </footer>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
