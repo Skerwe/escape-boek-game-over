@@ -7,7 +7,7 @@ describe("Inventory Companion Test", () => {
   });
 
   it("increase the Current location", () => {
-    cy.get("button").eq(1).click();
+    cy.get("button[data-test='increment']").click();
     cy.get("#current-location").contains("1");
   });
 
@@ -22,13 +22,13 @@ describe("Inventory Companion Test", () => {
     cy.contains("h2", "About");
   });
 
+  it("decrease the Current location", () => {
+    cy.get("button[data-test='decrement']").click();
+    cy.get("#current-location").contains("1");
+  });
+
   it("visits the Inventory page", () => {
     cy.get("#home-page").click();
     cy.contains("h2", "Inventaris");
-  });
-  
-  it("decrease the Current location", () => {
-    cy.get("button").eq(0).click();
-    cy.get("#current-location").contains("1");
   });
 });
