@@ -1,6 +1,14 @@
-<script setup>
+<script>
 import { RouterLink, RouterView } from "vue-router";
 import CurrentLocation from "@/components/CurrentLocation.vue";
+
+export default {
+  components: {
+    RouterLink,
+    RouterView,
+    CurrentLocation,
+  },
+};
 </script>
 
 <template>
@@ -14,10 +22,14 @@ import CurrentLocation from "@/components/CurrentLocation.vue";
 
     <nav class="level is-mobile has-background-light">
       <div class="level-item">
-        <RouterLink class="navbar-item" to="/">Inventory</RouterLink>
+        <RouterLink class="navbar-item" to="/" id="home-page"
+          >Inventory</RouterLink
+        >
       </div>
       <div class="level-item">
-        <RouterLink class="navbar-item" to="/about">About</RouterLink>
+        <RouterLink class="navbar-item" to="/about" id="about-page"
+          >About</RouterLink
+        >
       </div>
     </nav>
   </header>
@@ -34,5 +46,4 @@ import CurrentLocation from "@/components/CurrentLocation.vue";
   </footer>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

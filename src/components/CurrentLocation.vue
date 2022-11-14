@@ -14,11 +14,13 @@ export default {
 </script>
 
 <template>
-  <div class="mb-3">
-    Current location:
-    <button @click="currentLocation.decrement">-</button>
-    {{ currentLocation.location }}
-    <button @click="currentLocation.increment">+</button>
+  <div id="current-location" class="mb-3">
+    <span class="px-1">Current location:</span>
+    <button data-test="decrement" @click="currentLocation.decrement">-</button>
+    <span class="px-1" id="current-location">{{
+      currentLocation.location
+    }}</span>
+    <button data-test="increment" @click="currentLocation.increment">+</button>
   </div>
 </template>
 

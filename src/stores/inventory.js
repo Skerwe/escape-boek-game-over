@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 import { get, set } from "idb-keyval";
-import { INVENTORY_STORE_NAME } from "./store-names";
+import { INVENTORY_STORE_NAME } from "./store-configurations";
 
 export const useInventoryStore = defineStore({
   id: "inventory",
@@ -72,7 +72,7 @@ export const useInventoryStore = defineStore({
         checked: false,
       },
       {
-        handle: '"mechanisch-voorwerp',
+        handle: "mechanisch-voorwerp",
         description: "Vreemd mechanisch voorwerp",
         checked: false,
       },
@@ -99,10 +99,18 @@ export const useInventoryStore = defineStore({
     ],
   }),
   actions: {
-    save() {
+    save(doneCallback, errorCallBack) {
       set(INVENTORY_STORE_NAME, JSON.stringify(this.inventory))
-        .then(() => console.log("Inventory saved!"))
-        .catch((err) => console.log("Inventory save failed!", err));
+        .then(() => {
+          if (doneCallback) {
+            doneCallback();
+          }
+        })
+        .catch((error) => {
+          if (errorCallBack) {
+            errorCallBack(error);
+          }
+        });
     },
     load() {
       get(INVENTORY_STORE_NAME).then((stateFromIndexedDB) => {
