@@ -19,8 +19,11 @@ export default defineConfig({
         ),
       ],
       plugins: [
-        copy({ targets: [{ src: 'build/*', dest: 'www' }], hook: 'generateBundle' }),
-        del({ targets: "www/cordova.js", hook: "writeBundle" })
+        copy({
+          targets: [{ src: "build/*", dest: "www" }],
+          hook: "generateBundle",
+        }),
+        del({ targets: "www/cordova.js", hook: "writeBundle" }),
       ],
       output: { assetFileNames: "assets/[name]-[hash][extname]" },
     },
