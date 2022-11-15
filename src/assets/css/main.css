@@ -57,3 +57,7 @@
     font-family: 'Lato', sans-serif;
     color: var(--vt-c-text-light-2) !important;
   }
+
+  .checkbox:hover {
+    color: inherit;
+  }
