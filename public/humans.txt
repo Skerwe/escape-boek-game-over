@@ -7,7 +7,7 @@
 
 # THANKS
 
-    to all open source software
+    to all open source software that made this project possible
 
 # TECHNOLOGY COLOPHON
 

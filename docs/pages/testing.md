@@ -14,6 +14,9 @@ Run the command `npm run test:unit` to execute the unit test.
 :link: [Cypress](https://www.cypress.io/)
 
 Even with Cypress in the _package.json_ dev dependencies, it seems you still need to run `npm install cypress --save-dev`
+ youself just once to get the Cypress environment install on you machine.
+
+Run the command `npm run test:e2e` to start the Cypress dashboard.
 
 ## Linting
 

@@ -8,6 +8,11 @@ export default {
     RouterView,
     CurrentLocation,
   },
+  data() {
+    return {
+      version: "v1.0.1",
+    };
+  },
 };
 </script>
 
@@ -40,7 +45,7 @@ export default {
     <div class="content has-text-centered">
       <p>
         <strong>Inventory Companion</strong>
-        <span class="is-size-7 ml-1">v0.1.0</span>
+        <span class="is-size-7 ml-1">{{ version }}</span>
       </p>
     </div>
   </footer>
