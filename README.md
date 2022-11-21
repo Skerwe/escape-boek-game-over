@@ -1,5 +1,7 @@
 # Escape Boek - Game Over: Inventory Companion
 
+[![pages-build-deployment](https://github.com/Skerwe/escape-boek-game-over/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Skerwe/escape-boek-game-over/actions/workflows/pages/pages-build-deployment)
+
 ```text
   _____                      _                      _____                                  _
  |_   _|                    | |                    / ____|                                (_)
