@@ -35,7 +35,7 @@
     "@vitejs/plugin-vue": "^3.0.1",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/test-utils": "^2.0.2",
-    "cordova-android": "^11.0.0",
+    "cordova-android": "^10.1.2",
     "cypress": "^10.8.0",
     "eslint": "^8.5.0",
     "eslint-plugin-cypress": "^2.12.1",
