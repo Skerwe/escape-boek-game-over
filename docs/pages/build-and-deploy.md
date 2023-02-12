@@ -11,7 +11,7 @@ npm run build
 This will create a `build` folder used to preview the web app and also for e2e testing.  
 The `www` folder is the main output of the build command. Cordova use this folder to build the configured platforms.
 
-### 2. Testing the Android build
+### 2. Testing the Android platform
 
 ```shell
 cordova emulate android
