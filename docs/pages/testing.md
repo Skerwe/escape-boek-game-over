@@ -7,7 +7,7 @@
 The application data is stored with [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) and wile
  testing a [fake-indexeddb](https://github.com/dumbmatter/fakeIndexedDB) is used to run tests against.
 
-Run the command `npm run test:unit` to execute the unit test.
+Run the command `npm run test:unit` to execute the unit test with [Vitest](https://vitest.dev/).
 
 ## End2End Testing
 
@@ -17,6 +17,11 @@ Even with Cypress in the _package.json_ dev dependencies, it seems you still nee
  youself just once to get the Cypress environment install on you machine.
 
 Run the command `npm run test:e2e` to start the Cypress dashboard.
+
+```shell
+npm run build
+npm run test:e2e # or `npm run test:e2e:ci` for headless testing
+```
 
 ## Linting
 

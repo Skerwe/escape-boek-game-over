@@ -15,5 +15,6 @@
 
 1. [Introduction](pages/introduction.md)
 2. [Design](pages/design.md)
-3. [Testing](pages/testing.md)
-4. [Build and Deploy](pages/build-and-deploy.md)
+3. [Development](development.md)
+4. [Testing](pages/testing.md)
+5. [Build and Deploy](pages/build-and-deploy.md)

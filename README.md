@@ -33,9 +33,26 @@ Make sure these are installed first.
 - [npm](https://www.npmjs.com/get-npm) or equivilant
 - [Cordova][cordova]
 
-You should install Apache Cordova globally, `npm install -g cordova`
+NOTE: You should install Apache Cordova globally, `npm install -g cordova`
 
 ### Quick Start
+
+Clone the repository:
+
+```shell
+git clone https://github.com/Skerwe/escape-boek-game-over.git
+```
+
+Install the dependencies
+
+1. In bash/terminal/command line, `cd` into the project directory.
+2. Run `npm install` to install required files and dependencies.
+
+Serve the documentation website on `localhost:3000`
+
+```shell
+docsify serve docs
+```
 
 ## Build with
 
@@ -46,61 +63,5 @@ You should install Apache Cordova globally, `npm install -g cordova`
 - [IDB-Keyval](https://github.com/jakearchibald/idb-keyval) - IndexedDB Keyval Store
 - [Bulma](https://bulma.io/) - CSS Framework
 - [Cordova][cordova] - Cross-platform with One Code Base
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
- (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```shell
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```shell
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```shell
-npm run build
-```
-
-## Testing
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```shell
-npm run test:unit
-```
-
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
-
-```shell
-npm run build
-npm run test:e2e # or `npm run test:e2e:ci` for headless testing
-```
-
-## Linting
-
-### Lint with [ESLint](https://eslint.org/)
-
-```shell
-npm run lint
-```
-
-### Lint with [markdownlint](https://github.com/DavidAnson/markdownlint)
-
-```shell
-npm run lint:docs
-```
 
 [cordova]: https://cordova.apache.org/
