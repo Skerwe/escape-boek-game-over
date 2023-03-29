@@ -14,5 +14,5 @@ module.exports = {
       extends: ["plugin:cypress/recommended"],
     },
   ],
-  ignorePatterns: ["public/cordova.js", "www/*"],
+  ignorePatterns: ["cypress.config.js", "public/cordova.js", "www/*"],
 };
