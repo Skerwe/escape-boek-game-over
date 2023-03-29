@@ -1,4 +1,4 @@
-# Design
+# Design Documentation
 
-1. [Screen designs](pages/screen-design.md)
-2. [Application design](pages/application-design.md)
+- [Screen design docs](pages/design-pages/screen-design.md)
+- [Application design docs](pages/design-pages/application-design.md)
