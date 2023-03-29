@@ -6,8 +6,9 @@
         Save your progress by tracking your collected items and current location
         while playing through the
         <a class="has-text-info-dark"
-          href="https://www.de-leukste-kinderboeken.com/producten/escape-boek-game-over-9789000375080"
-          target="_blank">Escape boek - Game Over</a>
+          href="https://www.de-leukste-kinderboeken.com/producten/escape-boek-game-over-9789000375080" target="_blank">
+          Escape boek - Game Over
+        </a>
       </div>
 
       <div class="column mt-5">
