@@ -3,7 +3,7 @@
 The applicaiton is developed as a single page web application and then uses 
 [Apache Cordova](https://cordova.apache.org/) to build the mobile application.
 
-The mobile application supports Android SDK 33
+The mobile application supports Android SDK 32
 
 ## Build Cordova Applicatikn
 
