@@ -10,7 +10,11 @@ export default {
   },
   data() {
     return {
-      version: "v1.0.2",
+      version: "v1.1.0",
+      languages: {
+        en: { nativeName: 'EN' },
+        nl: { nativeName: 'NL' }
+      }
     };
   },
 };
@@ -25,18 +29,37 @@ export default {
 
     <CurrentLocation />
 
-    <nav class="level is-mobile has-background-light">
-      <div class="level-item">
-        <RouterLink class="navbar-item" to="/" id="home-page"
-          >Inventory</RouterLink
-        >
+    <nav class="navbar has-background-light" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
-      <div class="level-item">
-        <RouterLink class="navbar-item" to="/about" id="about-page"
-          >About</RouterLink
-        >
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <RouterLink class="navbar-item" to="/" id="home-page">{{ $t('pageInventory') }}</RouterLink>
+          <RouterLink class="navbar-item" to="/about" id="about-page">{{ $t('pageAbout') }}</RouterLink>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item" v-if="languages">
+            <span v-for="(lng, index) in Object.keys(languages)" :key="lng">
+              <a v-if="$i18next.resolvedLanguage !== lng" v-on:click="$i18next.changeLanguage(lng)">
+                {{ languages[lng].nativeName }}
+              </a>
+              <strong v-if="$i18next.resolvedLanguage === lng">
+                {{ languages[lng].nativeName }}
+              </strong>
+              <span v-if="index < (Object.keys(languages).length - 1)">&nbsp;|&nbsp;</span>
+            </span>
+          </div>
+        </div>
       </div>
     </nav>
+
   </header>
 
   <RouterView />

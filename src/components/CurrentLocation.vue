@@ -15,7 +15,7 @@ export default {
 
 <template>
   <div id="current-location" class="mb-3">
-    <span class="px-1">Current location:</span>
+    <span class="px-1">{{ $t('currentLocation') }}:</span>
     <button data-test="decrement" @click="currentLocation.decrement">-</button>
     <span class="px-1" id="current-location">{{
       currentLocation.location

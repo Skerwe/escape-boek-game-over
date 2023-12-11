@@ -19,7 +19,7 @@ export default {
 
 <template>
   <main class="mx-5 mt-3 mb-5">
-    <h2 class="title is-4 has-text-centered mt-2 mb-4">Inventaris</h2>
+    <h2 class="title is-4 has-text-centered mt-2 mb-4">{{ $t('pageInventory') }}</h2>
     <div class="columns is-gapless is-centered">
       <div class="column is-narrow">
         <div class="field" v-for="(item, index) in inventory" :key="index">
