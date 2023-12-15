@@ -22,9 +22,12 @@ describe("CurrentLocation", () => {
             createSpy: vi.fn,
           }),
         ],
+        mocks: {
+          $t: (msg) => msg
+        },
       },
     });
-    expect(wrapper.text()).toContain("Current location:");
+    expect(wrapper.text()).toContain("currentLocation");
   });
 
   it("increment current location", () => {
@@ -35,6 +38,9 @@ describe("CurrentLocation", () => {
             createSpy: vi.fn,
           }),
         ],
+        mocks: {
+          $t: (msg) => msg
+        },
       },
     });
     wrapper.get('[data-test="increment"]').trigger("click");
@@ -51,6 +57,9 @@ describe("CurrentLocation", () => {
             createSpy: vi.fn,
           }),
         ],
+        mocks: {
+          $t: (msg) => msg
+        },
       },
     });
     wrapper.get('[data-test="decrement"]').trigger("click");

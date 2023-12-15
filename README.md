@@ -56,12 +56,13 @@ docsify serve docs
 
 ## Build with
 
-- [Vue 3](https://vuejs.org/) - Progressive JavaScript Framework
-- [Vue Router](https://router.vuejs.org/) - The official router for Vue.js
-- [Vite](https://vitejs.dev/) - Vue Build Tool
-- [Pinia](https://pinia.vuejs.org/) - State Management
-- [IDB-Keyval](https://github.com/jakearchibald/idb-keyval) - IndexedDB Keyval Store
-- [Bulma](https://bulma.io/) - CSS Framework
-- [Cordova][cordova] - Cross-platform with One Code Base
+- [Vue 3](https://vuejs.org/) -- Progressive JavaScript Framework
+- [Vue Router](https://router.vuejs.org/) -- The official router for Vue.js
+- [Vite](https://vitejs.dev/) -- Vue Build Tool
+- [Pinia](https://pinia.vuejs.org/) -- State Management
+- [IDB-Keyval](https://github.com/jakearchibald/idb-keyval) -- IndexedDB Keyval Store
+- [Bulma](https://bulma.io/) -- CSS Framework
+- [Cordova][cordova] -- Cross-platform with One Code Base
+- [i18next](https://www.i18next.com/) and [i18next-vue](https://github.com/i18next/i18next-vue) -- Internationalization Framework
 
 [cordova]: https://cordova.apache.org/

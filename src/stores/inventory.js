@@ -47,12 +47,12 @@ export const useInventoryStore = defineStore({
         checked: false,
       },
       {
-        handle: "wiwapenuitrusting",
+        handle: "wapenuitrusting",
         description: "Wiwapenuitrusting",
         checked: false,
       },
       {
-        handle: "ijsbron-extract",
+        handle: "ijsbron",
         description: "Ijsbron-extract",
         checked: false,
       },
@@ -62,7 +62,7 @@ export const useInventoryStore = defineStore({
         checked: false,
       },
       {
-        handle: "energiebron-extract",
+        handle: "energiebron",
         description: "Onreine energiebron-extract",
         checked: false,
       },

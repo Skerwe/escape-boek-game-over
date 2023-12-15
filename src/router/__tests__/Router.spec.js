@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from "vitest";
 
-import App from "../../App.vue";
+import App from "../../Suspenser.vue";
 
 import { mount } from "@vue/test-utils";
 import { createRouter, createWebHistory } from "vue-router";
@@ -26,6 +26,9 @@ describe("routing", async () => {
           createSpy: vi.fn,
         }),
       ],
+      mocks: {
+        $t: (msg) => msg
+      },
     },
   });
 
