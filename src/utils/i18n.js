@@ -14,7 +14,8 @@ export const i18nextPromise = i18next
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
-    debug: true,
+    debug: false,
+    load: "languageOnly",
     fallbackLng: "en",
   });
 
