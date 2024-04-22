@@ -54,6 +54,7 @@ export default {
         aria-label="menu"
         aria-expanded="false"
         data-target="navbarBasicExample"
+        data-cy="burger-menu"
       >
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -62,12 +63,20 @@ export default {
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <RouterLink class="navbar-item" to="/" id="home-page">{{
-            $t("pageInventory")
-          }}</RouterLink>
-          <RouterLink class="navbar-item" to="/about" id="about-page">{{
-            $t("pageAbout")
-          }}</RouterLink>
+          <RouterLink
+            class="navbar-item"
+            to="/"
+            id="home-page"
+            data-cy="home-page-link"
+            >{{ $t("pageInventory") }}</RouterLink
+          >
+          <RouterLink
+            class="navbar-item"
+            to="/about"
+            id="about-page"
+            data-cy="about-page-link"
+            >{{ $t("pageAbout") }}</RouterLink
+          >
         </div>
 
         <div class="navbar-end">

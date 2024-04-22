@@ -28,6 +28,7 @@ export default {
           <div class="control">
             <input
               type="checkbox"
+              data-cy="inventory-checkbox"
               :id="item.handle"
               :name="item.handle"
               v-model="item.checked"

@@ -29,7 +29,7 @@ describe("routing", async () => {
         }),
       ],
       mocks: {
-        $t: (msg) => msg
+        $t: (msg) => msg,
       },
     },
   });

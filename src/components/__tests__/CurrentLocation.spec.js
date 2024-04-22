@@ -23,7 +23,7 @@ describe("CurrentLocation", () => {
           }),
         ],
         mocks: {
-          $t: (msg) => msg
+          $t: (msg) => msg,
         },
       },
     });
@@ -39,11 +39,11 @@ describe("CurrentLocation", () => {
           }),
         ],
         mocks: {
-          $t: (msg) => msg
+          $t: (msg) => msg,
         },
       },
     });
-    wrapper.get('[data-test="increment"]').trigger("click");
+    wrapper.get('[data-cy="increment-button"]').trigger("click");
 
     const store = useLocationStore();
     expect(store.increment).toHaveBeenCalledTimes(1);
@@ -58,11 +58,11 @@ describe("CurrentLocation", () => {
           }),
         ],
         mocks: {
-          $t: (msg) => msg
+          $t: (msg) => msg,
         },
       },
     });
-    wrapper.get('[data-test="decrement"]').trigger("click");
+    wrapper.get('[data-cy="decrement-button"]').trigger("click");
 
     const store = useLocationStore();
     expect(store.decrement).toHaveBeenCalledTimes(1);
