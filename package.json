@@ -5,7 +5,7 @@
   "private": "true",
   "description": "A digital inventory companion mobile application for the choose your own adventure 'Escape Boek: Game Over'.",
   "author": "Indie Sagtewerke <support@indiesagtewerke.dev> (https://indiesagtewerke.dev)",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "docs": "docsify serve docs",
     "dev": "vite",
@@ -41,7 +41,7 @@
     "@vitejs/plugin-vue": "^4.5.2",
     "@vue/eslint-config-prettier": "^8.0.0",
     "@vue/test-utils": "^2.4.3",
-    "cordova-android": "^10.1.2",
+    "cordova-android": "^12.0.1",
     "cypress": "^13.7.3",
     "eslint": "^8.55.0",
     "eslint-plugin-cypress": "^2.15.1",

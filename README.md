@@ -32,6 +32,7 @@ Make sure these are installed first.
 - [Node.js](http://nodejs.org)
 - [npm](https://www.npmjs.com/get-npm) or equivilant
 - [Cordova][cordova]
+- [Java 11](https://adoptium.net/)
 
 NOTE: You should install Apache Cordova globally, `npm install -g cordova`
 
