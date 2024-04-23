@@ -19,20 +19,23 @@ export default {
 
 <template>
   <main class="mx-5 mt-3 mb-5">
-    <h2 class="title is-4 has-text-centered mt-2 mb-4">Inventaris</h2>
+    <h2 class="title is-4 has-text-centered mt-2 mb-4">
+      {{ $t("pageInventory") }}
+    </h2>
     <div class="columns is-gapless is-centered">
       <div class="column is-narrow">
         <div class="field" v-for="(item, index) in inventory" :key="index">
           <div class="control">
             <input
               type="checkbox"
+              data-cy="inventory-checkbox"
               :id="item.handle"
               :name="item.handle"
               v-model="item.checked"
               @change="save()"
             />
             <label :for="item.handle" class="checkbox pl-2">{{
-              item.description
+              $t(`items.${item.handle}`)
             }}</label>
           </div>
         </div>
@@ -41,4 +44,4 @@ export default {
   </main>
 </template>
 
-<style></style>
+<style scoped></style>

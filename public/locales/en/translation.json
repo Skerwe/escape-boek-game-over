@@ -1,0 +1,31 @@
+{
+  "bookTitle": "Escape boek - Game Over",
+  "appDescription": "Save your progress by tracking your collected items and current location.",
+  "bookDescription": "Companion application for: ",
+  "byText": "by",
+  "sourceCodeLicensedText": "The source code is licensed with",
+  "websiteLicensedText": "The website content is licensed with",
+  "pageAbout": "About",
+  "pageInventory": "Inventory",
+  "currentLocation": "Current location",
+  "items": {
+    "handboeien": "Electric handcuffs",
+    "plattegrond": "Map",
+    "batterij": "Battery",
+    "sleutel": "Metal key",
+    "parachute": "Powered parachute",
+    "snijgun": "Cutting gun",
+    "steen": "Engraved stone",
+    "schakelaar": "Small switch",
+    "wapenuitrusting": "Wiarmour",
+    "ijsbron": "Ice Spring Extract",
+    "vlampistool": "Flame gun",
+    "energiebron": "Unclean energy source extract",
+    "bol-der-leegte": "Sphere of Void",
+    "mechanisch-voorwerp": "Strange mechanical object",
+    "energiekubus": "Discharging energy cube",
+    "ruimteboard": "Space sign",
+    "energiekern": "Energy core",
+    "zuivere-zip": "Clean zipper"
+  }
+}

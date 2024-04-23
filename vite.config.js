@@ -15,7 +15,7 @@ export default defineConfig({
       external: [
         path.resolve(
           path.dirname(fileURLToPath(import.meta.url)),
-          "public/cordova.js"
+          "public/cordova.js",
         ),
       ],
       plugins: [

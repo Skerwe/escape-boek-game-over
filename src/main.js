@@ -1,7 +1,8 @@
 import { createApp } from "vue";
 import { createPinia } from "pinia";
 
-import App from "./App.vue";
+import i18n from "./utils/i18n";
+import App from "./LoaderSuspenser.vue";
 import router from "./router";
 
 import "normalize.css";
@@ -19,6 +20,7 @@ function onDeviceReady() {
 
   app.use(createPinia());
   app.use(router);
+  i18n(app);
 
   app.mount("#app");
 }

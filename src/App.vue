@@ -2,6 +2,9 @@
 import { RouterLink, RouterView } from "vue-router";
 import CurrentLocation from "@/components/CurrentLocation.vue";
 
+import { i18nextPromise } from "./utils/i18n";
+import $ from "jquery";
+
 export default {
   components: {
     RouterLink,
@@ -10,8 +13,22 @@ export default {
   },
   data() {
     return {
-      version: "v1.0.2",
+      version: "v1.1.0",
+      languages: {
+        en: { nativeName: "EN" },
+        nl: { nativeName: "NL" },
+      },
     };
+  },
+  async setup() {
+    const burgerToggel = () => {
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      $(".navbar-burger").toggleClass("is-active");
+      $(".navbar-menu").toggleClass("is-active");
+    };
+
+    await i18nextPromise;
+    return { burgerToggel };
   },
 };
 </script>
@@ -25,16 +42,61 @@ export default {
 
     <CurrentLocation />
 
-    <nav class="level is-mobile has-background-light">
-      <div class="level-item">
-        <RouterLink class="navbar-item" to="/" id="home-page"
-          >Inventory</RouterLink
-        >
-      </div>
-      <div class="level-item">
-        <RouterLink class="navbar-item" to="/about" id="about-page"
-          >About</RouterLink
-        >
+    <nav
+      class="navbar has-background-light"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <a
+        @click="burgerToggel()"
+        role="button"
+        class="navbar-burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbarBasicExample"
+        data-cy="burger-menu"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <RouterLink
+            class="navbar-item"
+            to="/"
+            id="home-page"
+            data-cy="home-page-link"
+            >{{ $t("pageInventory") }}</RouterLink
+          >
+          <RouterLink
+            class="navbar-item"
+            to="/about"
+            id="about-page"
+            data-cy="about-page-link"
+            >{{ $t("pageAbout") }}</RouterLink
+          >
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item" v-if="languages">
+            <span v-for="(lng, index) in Object.keys(languages)" :key="lng">
+              <a
+                v-if="$i18next.resolvedLanguage !== lng"
+                @click="$i18next.changeLanguage(lng)"
+              >
+                {{ languages[lng].nativeName }}
+              </a>
+              <strong v-if="$i18next.resolvedLanguage === lng">
+                {{ languages[lng].nativeName }}
+              </strong>
+              <span v-if="index < Object.keys(languages).length - 1"
+                >&nbsp;|&nbsp;</span
+              >
+            </span>
+          </div>
+        </div>
       </div>
     </nav>
   </header>

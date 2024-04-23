@@ -1,0 +1,31 @@
+{
+  "bookTitle": "Escape boek - Game Over",
+  "appDescription": "Bewaar uw voortgang door uw verzamelde items en huidige locatie bij te houden.",
+  "bookDescription": "Begeleidende toepassing voor: ",
+  "byText": "door",
+  "sourceCodeLicensedText": "De broncode is gelicentieerd met",
+  "websiteLicensedText": "De inhoud van de website is gelicentieerd met",
+  "pageAbout": "Over de app",
+  "pageInventory": "Inventaris",
+  "currentLocation": "Huidige locatie",
+  "items": {
+    "handboeien": "Elektrische handboeien",
+    "plattegrond": "Plattegrond",
+    "batterij": "Batterij",
+    "sleutel": "Metalen sleutel",
+    "parachute": "Aangedreven parachute",
+    "snijgun": "Snijgun",
+    "steen": "Gegraveerde steen",
+    "schakelaar": "Klein schakelaar",
+    "wapenuitrusting": "Wiwapenuitrusting",
+    "ijsbron": "Ijsbron-extract",
+    "vlampistool": "Vlampistool",
+    "energiebron": "Onreine energiebron-extract",
+    "bol-der-leegte": "Bol der leegte",
+    "mechanisch-voorwerp": "Vreemd mechanisch voorwerp",
+    "energiekubus": "Ontladen energiekubus",
+    "ruimteboard": "Ruimteboard",
+    "energiekern": "Energiekern",
+    "zuivere-zip": "Zuivere zip"
+  }
+}
