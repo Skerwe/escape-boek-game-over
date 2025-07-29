@@ -29,10 +29,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 Make sure these are installed first.
 
-- [Node.js](http://nodejs.org)
-- [npm](https://www.npmjs.com/get-npm) or equivilant
+- [Android SDk][android] for Android 14 (API level 34)
+- [Node.js][node]
+- [npm][npm]
 - [Cordova][cordova]
-- [Java 11](https://adoptium.net/)
+- [Java 17 LTS][java]
+- [Gradle 8.10.2][gradle]
 
 NOTE: You should install Apache Cordova globally, `npm install -g cordova`
 
@@ -66,4 +68,9 @@ docsify serve docs
 - [Cordova][cordova] -- Cross-platform with One Code Base
 - [i18next](https://www.i18next.com/) and [i18next-vue](https://github.com/i18next/i18next-vue) -- Internationalization Framework
 
+[android]: https://developer.android.com/studio
 [cordova]: https://cordova.apache.org/
+[java]: https://adoptium.net/
+[gradle]: https://gradle.org
+[node]: http://nodejs.org
+[npm]: https://www.npmjs.com/get-npm

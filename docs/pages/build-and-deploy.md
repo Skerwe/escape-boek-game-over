@@ -1,5 +1,7 @@
 # Build and Deploy
 
+:link: [Android Platform Guide](https://cordova.apache.org/docs/en/dev/guide/platforms/android/index.html)
+
 ## Build steps
 
 ### 1. Build application with Vite
@@ -23,5 +25,5 @@ cordova run --emulator
 :link: [Sign your app from command line](https://developer.android.com/studio/build/building-cmdline#sign_cmdline)
 
 ```shell
-cordova build android --release
+cordova run android --release -- --keystore=../my-key.keystore --storePassword=pw --alias=alias_name --password=pw --packageType=bundle
 ```
