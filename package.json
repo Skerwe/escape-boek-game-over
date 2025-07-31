@@ -23,7 +23,7 @@
   ],
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "bulma": "^0.9.4",
+    "bulma": "^1.0.4",
     "i18next": "^23.16.8",
     "i18next-browser-languagedetector": "^7.2.0",
     "i18next-http-backend": "^2.4.2",
@@ -41,7 +41,7 @@
     "@vitejs/plugin-vue": "^4.6.2",
     "@vue/eslint-config-prettier": "^8.0.0",
     "@vue/test-utils": "^2.4.6",
-    "cordova-android": "^12.0.1",
+    "cordova-android": "^14.0.1",
     "cypress": "^13.17.0",
     "eslint": "^8.57.1",
     "eslint-plugin-cypress": "^2.15.2",
