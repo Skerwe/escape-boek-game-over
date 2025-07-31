@@ -1,11 +1,16 @@
-const { defineConfig } = require("cypress");
+const { defineConfig } = require('cypress')
 
-module.export = defineConfig({
+module.exports = defineConfig({
   e2e: {
     specPattern: "cypress/e2e/**/*.{cy,spec}.{js,jsx,ts,tsx}",
     baseUrl: "http://localhost:4173",
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      // e2e testing node events setup code
     },
   },
-});
+  component: {
+    setupNodeEvents(on, config) {
+      // component testing node events setup code
+    },
+  },
+})
