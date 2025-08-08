@@ -1,9 +1,9 @@
 <script>
-import { RouterLink, RouterView } from "vue-router";
-import CurrentLocation from "@/components/CurrentLocation.vue";
+import { RouterLink, RouterView } from 'vue-router';
+import CurrentLocation from '@/components/CurrentLocation.vue';
 
-import { i18nextPromise } from "./utils/i18n";
-import $ from "jquery";
+import { i18nextPromise } from './utils/i18n';
+import $ from 'jquery';
 
 export default {
   components: {
@@ -13,18 +13,18 @@ export default {
   },
   data() {
     return {
-      version: "v1.1.0",
+      version: 'v1.1.0',
       languages: {
-        en: { nativeName: "EN" },
-        nl: { nativeName: "NL" },
+        en: { nativeName: 'EN' },
+        nl: { nativeName: 'NL' },
       },
     };
   },
   async setup() {
     const burgerToggel = () => {
-      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-      $(".navbar-burger").toggleClass("is-active");
-      $(".navbar-menu").toggleClass("is-active");
+      // Toggle the 'is-active' class on both the 'navbar-burger' and the 'navbar-menu'
+      $('.navbar-burger').toggleClass('is-active');
+      $('.navbar-menu').toggleClass('is-active');
     };
 
     await i18nextPromise;

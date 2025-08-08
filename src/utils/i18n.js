@@ -1,7 +1,7 @@
-import i18next from "i18next";
-import I18NextVue from "i18next-vue";
-import LanguageDetector from "i18next-browser-languagedetector";
-import Backend from "i18next-http-backend";
+import i18next from 'i18next';
+import I18NextVue from 'i18next-vue';
+import LanguageDetector from 'i18next-browser-languagedetector';
+import Backend from 'i18next-http-backend';
 
 export const i18nextPromise = i18next
   // i18next-http-backend
@@ -15,8 +15,8 @@ export const i18nextPromise = i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     debug: false,
-    load: "languageOnly",
-    fallbackLng: "en",
+    load: 'languageOnly',
+    fallbackLng: 'en',
   });
 
 export default function (app) {

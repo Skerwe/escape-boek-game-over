@@ -1,6 +1,6 @@
 <script>
-import { useInventoryStore } from "@/stores/inventory";
-import { storeToRefs } from "pinia";
+import { useInventoryStore } from '@/stores/inventory';
+import { storeToRefs } from 'pinia';
 
 export default {
   setup() {

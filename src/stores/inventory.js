@@ -1,9 +1,8 @@
-import { defineStore } from "pinia";
-import { get, set } from "idb-keyval";
-import { INVENTORY_STORE_NAME } from "./store-configurations";
+import { defineStore } from 'pinia';
+import { get, set } from 'idb-keyval';
+import { INVENTORY_STORE_NAME } from './store-configurations';
 
-export const useInventoryStore = defineStore({
-  id: "inventory",
+export const useInventoryStore = defineStore('inventory', {
   state: () => ({
     inventory: [
       {

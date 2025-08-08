@@ -1,5 +1,5 @@
 <script>
-import { useLocationStore } from "@/stores/location";
+import { useLocationStore } from '@/stores/location';
 
 export default {
   setup() {

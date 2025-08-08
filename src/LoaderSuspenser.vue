@@ -1,8 +1,8 @@
 <script>
-import App from "./App.vue";
+import App from './App.vue';
 
 export default {
-  name: "LoaderSuspenser",
+  name: 'LoaderSuspenser',
   components: {
     App,
   },

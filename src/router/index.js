@@ -1,25 +1,29 @@
-import { createRouter, createWebHistory } from "vue-router";
-import InventoryView from "../views/InventoryView.vue";
+import { createRouter, createWebHistory, createMemoryHistory } from 'vue-router';
+import InventoryView from '../views/InventoryView.vue';
+
+const isClient = typeof window !== 'undefined'
 
 const routes = [
-  { path: "/index.html", redirect: "/" },
+  { path: '/index.html', redirect: '/' },
   {
-    path: "/",
-    name: "inventory",
+    path: '/',
+    name: 'inventory',
     component: InventoryView,
   },
   {
-    path: "/about",
-    name: "about",
+    path: '/about',
+    name: 'about',
     // route level code-splitting
     // this generates a separate chunk (About.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import("../views/AboutView.vue"),
+    component: () => import('../views/AboutView.vue'),
   },
 ];
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: isClient
+    ? createWebHistory(import.meta.env.BASE_URL)
+    : createMemoryHistory(import.meta.env.BASE_URL),
   routes: routes,
 });
 
