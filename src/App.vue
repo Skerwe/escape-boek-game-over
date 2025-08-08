@@ -11,15 +11,6 @@ export default {
     RouterView,
     CurrentLocation,
   },
-  data() {
-    return {
-      version: 'v1.1.0',
-      languages: {
-        en: { nativeName: 'EN' },
-        nl: { nativeName: 'NL' },
-      },
-    };
-  },
   async setup() {
     const burgerToggel = () => {
       // Toggle the 'is-active' class on both the 'navbar-burger' and the 'navbar-menu'
@@ -30,12 +21,26 @@ export default {
     await i18nextPromise;
     return { burgerToggel };
   },
+  data() {
+    return {
+      version: 'v1.1.0',
+      languages: {
+        en: { nativeName: 'EN' },
+        nl: { nativeName: 'NL' },
+      },
+    };
+  },
 };
 </script>
 
 <template>
-  <header class="has-text-centered mt-2" id="page-header">
-    <h1 class="title is-inline-block-desktop">Escape Boek</h1>
+  <header
+    id="page-header"
+    class="has-text-centered mt-2"
+  >
+    <h1 class="title is-inline-block-desktop">
+      Escape Boek
+    </h1>
     <div class="subtitle is-inline-block-desktop">
       <span class="is-invisible-touch">: </span>Game Over
     </div>
@@ -48,40 +53,51 @@ export default {
       aria-label="main navigation"
     >
       <a
-        @click="burgerToggel()"
         role="button"
         class="navbar-burger"
         aria-label="menu"
         aria-expanded="false"
         data-target="navbarBasicExample"
         data-cy="burger-menu"
+        @click="burgerToggel()"
       >
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
+        <span aria-hidden="true" />
+        <span aria-hidden="true" />
+        <span aria-hidden="true" />
       </a>
 
-      <div id="navbarBasicExample" class="navbar-menu">
+      <div
+        id="navbarBasicExample"
+        class="navbar-menu"
+      >
         <div class="navbar-start">
           <RouterLink
+            id="home-page"
             class="navbar-item"
             to="/"
-            id="home-page"
             data-cy="home-page-link"
-            >{{ $t("pageInventory") }}</RouterLink
           >
+            {{ $t("pageInventory") }}
+          </RouterLink>
           <RouterLink
+            id="about-page"
             class="navbar-item"
             to="/about"
-            id="about-page"
             data-cy="about-page-link"
-            >{{ $t("pageAbout") }}</RouterLink
           >
+            {{ $t("pageAbout") }}
+          </RouterLink>
         </div>
 
         <div class="navbar-end">
-          <div class="navbar-item" v-if="languages">
-            <span v-for="(lng, index) in Object.keys(languages)" :key="lng">
+          <div
+            v-if="languages"
+            class="navbar-item"
+          >
+            <span
+              v-for="(lng, index) in Object.keys(languages)"
+              :key="lng"
+            >
               <a
                 v-if="$i18next.resolvedLanguage !== lng"
                 @click="$i18next.changeLanguage(lng)"
@@ -91,9 +107,7 @@ export default {
               <strong v-if="$i18next.resolvedLanguage === lng">
                 {{ languages[lng].nativeName }}
               </strong>
-              <span v-if="index < Object.keys(languages).length - 1"
-                >&nbsp;|&nbsp;</span
-              >
+              <span v-if="index < Object.keys(languages).length - 1">&nbsp;|&nbsp;</span>
             </span>
           </div>
         </div>
@@ -103,7 +117,10 @@ export default {
 
   <RouterView />
 
-  <footer class="footer has-background-light py-4" id="page-footer">
+  <footer
+    id="page-footer"
+    class="footer has-background-light py-4"
+  >
     <div class="content has-text-centered">
       <p>
         <strong>Inventory Companion</strong>

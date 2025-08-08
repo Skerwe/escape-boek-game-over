@@ -7,8 +7,12 @@
       class="has-text-centered-tablet columns is-flex-direction-column is-gapless mt-5"
     >
       <div class="column">
-        <div class="mb-2">{{ $t("appDescription") }}</div>
-        <div class="is-inline-desktop">{{ $t("bookDescription") }}</div>
+        <div class="mb-2">
+          {{ $t("appDescription") }}
+        </div>
+        <div class="is-inline-desktop">
+          {{ $t("bookDescription") }}
+        </div>
         <div class="is-inline-desktop">
           <a
             class="has-text-info-dark"
@@ -29,8 +33,7 @@
             href="https://indiesagtewerke.dev"
             target="_blank"
             title="Game Development Studio"
-            >Indie Sagtewerke</a
-          >.
+          >Indie Sagtewerke</a>.
         </div>
         <div class="is-inline-block-desktop mr-2 mt-2">
           {{ $t("sourceCodeLicensedText") }}
@@ -39,8 +42,7 @@
             href="https://spdx.org/licenses/LGPL-3.0-or-later.html"
             target="_blank"
             title="GNU General Public License v3.0"
-            >GNU GPLv3</a
-          >.
+          >GNU GPLv3</a>.
         </div>
         <div class="is-inline-block-desktop mt-2">
           {{ $t("websiteLicensedText") }}
@@ -49,8 +51,7 @@
             href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
             target="_blank"
             title="Attribution-NonCommercial-ShareAlike License"
-            >CC BY NC SA 4.0</a
-          >
+          >CC BY NC SA 4.0</a>
         </div>
       </div>
     </div>

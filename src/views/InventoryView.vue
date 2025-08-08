@@ -24,17 +24,24 @@ export default {
     </h2>
     <div class="columns is-gapless is-centered">
       <div class="column is-narrow">
-        <div class="field" v-for="(item, index) in inventory" :key="index">
+        <div
+          v-for="(item, index) in inventory"
+          :key="index"
+          class="field"
+        >
           <div class="control">
             <input
+              :id="item.handle"
+              v-model="item.checked"
               type="checkbox"
               data-cy="inventory-checkbox"
-              :id="item.handle"
               :name="item.handle"
-              v-model="item.checked"
               @change="save()"
-            />
-            <label :for="item.handle" class="checkbox pl-2">{{
+            >
+            <label
+              :for="item.handle"
+              class="checkbox pl-2"
+            >{{
               $t(`items.${item.handle}`)
             }}</label>
           </div>
