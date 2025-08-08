@@ -67,6 +67,7 @@ docsify serve docs
 - [Bulma](https://bulma.io/) -- CSS Framework
 - [Cordova][cordova] -- Cross-platform with One Code Base
 - [i18next](https://www.i18next.com/) and [i18next-vue](https://github.com/i18next/i18next-vue) -- Internationalization Framework
+- [Istanbul](https://istanbul.js.org) -- JS Test Coverage Framework
 
 [android]: https://developer.android.com/studio
 [cordova]: https://cordova.apache.org/

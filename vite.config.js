@@ -9,6 +9,14 @@ import del from "rollup-plugin-delete";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  test: {
+    environment: 'jsdom',
+    coverage: {
+      provider: 'istanbul',
+      reporter: ['text', 'html', 'clover', 'json'],
+      include: ['src']
+    },
+  },
   build: {
     outDir: "build",
     rollupOptions: {
