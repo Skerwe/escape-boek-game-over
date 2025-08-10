@@ -34,13 +34,8 @@ export default {
 </script>
 
 <template>
-  <header
-    id="page-header"
-    class="has-text-centered mt-2"
-  >
-    <h1 class="title is-inline-block-desktop">
-      Escape Boek
-    </h1>
+  <header id="page-header" class="has-text-centered mt-2">
+    <h1 class="title is-inline-block-desktop">Escape Boek</h1>
     <div class="subtitle is-inline-block-desktop">
       <span class="is-invisible-touch">: </span>Game Over
     </div>
@@ -66,10 +61,7 @@ export default {
         <span aria-hidden="true" />
       </a>
 
-      <div
-        id="navbarBasicExample"
-        class="navbar-menu"
-      >
+      <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
           <RouterLink
             id="home-page"
@@ -77,7 +69,7 @@ export default {
             to="/"
             data-cy="home-page-link"
           >
-            {{ $t("pageInventory") }}
+            {{ $t('pageInventory') }}
           </RouterLink>
           <RouterLink
             id="about-page"
@@ -85,19 +77,13 @@ export default {
             to="/about"
             data-cy="about-page-link"
           >
-            {{ $t("pageAbout") }}
+            {{ $t('pageAbout') }}
           </RouterLink>
         </div>
 
         <div class="navbar-end">
-          <div
-            v-if="languages"
-            class="navbar-item"
-          >
-            <span
-              v-for="(lng, index) in Object.keys(languages)"
-              :key="lng"
-            >
+          <div v-if="languages" class="navbar-item">
+            <span v-for="(lng, index) in Object.keys(languages)" :key="lng">
               <a
                 v-if="$i18next.resolvedLanguage !== lng"
                 @click="$i18next.changeLanguage(lng)"
@@ -107,7 +93,9 @@ export default {
               <strong v-if="$i18next.resolvedLanguage === lng">
                 {{ languages[lng].nativeName }}
               </strong>
-              <span v-if="index < Object.keys(languages).length - 1">&nbsp;|&nbsp;</span>
+              <span v-if="index < Object.keys(languages).length - 1"
+                >&nbsp;|&nbsp;</span
+              >
             </span>
           </div>
         </div>
@@ -117,10 +105,7 @@ export default {
 
   <RouterView />
 
-  <footer
-    id="page-footer"
-    class="footer has-background-light py-4"
-  >
+  <footer id="page-footer" class="footer has-background-light py-4">
     <div class="content has-text-centered">
       <p>
         <strong>Inventory Companion</strong>

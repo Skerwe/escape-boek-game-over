@@ -1,7 +1,11 @@
-import { createRouter, createWebHistory, createMemoryHistory } from 'vue-router';
+import {
+  createRouter,
+  createWebHistory,
+  createMemoryHistory,
+} from 'vue-router';
 import InventoryView from '../views/InventoryView.vue';
 
-const isClient = typeof window !== 'undefined'
+const isClient = typeof window !== 'undefined';
 
 const routes = [
   { path: '/index.html', redirect: '/' },

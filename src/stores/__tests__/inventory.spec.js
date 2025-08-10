@@ -34,8 +34,8 @@ describe('InventoryStore', () => {
           expect(data).toEqual({
             inventory: expect.arrayContaining([
               {
-                handle: "plattegrond",
-                description: "Plattegrond",
+                handle: 'plattegrond',
+                description: 'Plattegrond',
                 checked: true,
               },
             ]),

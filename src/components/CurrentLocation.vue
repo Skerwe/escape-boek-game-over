@@ -14,27 +14,15 @@ export default {
 </script>
 
 <template>
-  <div
-    id="current-location"
-    class="mb-3"
-  >
-    <span class="px-1">{{ $t("currentLocation") }}:</span>
-    <button
-      data-cy="decrement-button"
-      @click="currentLocation.decrement"
-    >
+  <div id="current-location" class="mb-3">
+    <span class="px-1">{{ $t('currentLocation') }}:</span>
+    <button data-cy="decrement-button" @click="currentLocation.decrement">
       -
     </button>
-    <span
-      class="px-1"
-      data-cy="current-location-value"
-    >{{
+    <span class="px-1" data-cy="current-location-value">{{
       currentLocation.location
     }}</span>
-    <button
-      data-cy="increment-button"
-      @click="currentLocation.increment"
-    >
+    <button data-cy="increment-button" @click="currentLocation.increment">
       +
     </button>
   </div>
