@@ -66,7 +66,7 @@ docsify serve docs
 - [IDB-Keyval](https://github.com/jakearchibald/idb-keyval) -- IndexedDB Keyval Store
 - [Bulma](https://bulma.io/) -- CSS Framework
 - [Cordova][cordova] -- Cross-platform with One Code Base
-- [i18next](https://www.i18next.com/) and [i18next-vue](https://github.com/i18next/i18next-vue) -- Internationalization Framework
+- [Vue I18n](https://vue-i18n.intlify.dev) -- Internationalization Framework
 - [Istanbul](https://istanbul.js.org) -- JS Test Coverage Framework
 
 [android]: https://developer.android.com/studio

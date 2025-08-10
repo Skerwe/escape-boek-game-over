@@ -2,7 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router';
 import CurrentLocation from '@/components/CurrentLocation.vue';
 
-import { i18nextPromise } from './utils/i18n';
+import { useI18n } from 'vue-i18n'
 import $ from 'jquery';
 
 export default {
@@ -18,8 +18,8 @@ export default {
       $('.navbar-menu').toggleClass('is-active');
     };
 
-    await i18nextPromise;
-    return { burgerToggel };
+    const { t } = useI18n()
+    return { burgerToggel, t };
   },
   data() {
     return {
@@ -82,18 +82,18 @@ export default {
         </div>
 
         <div class="navbar-end">
-          <div v-if="languages" class="navbar-item">
-            <span v-for="(lng, index) in Object.keys(languages)" :key="lng">
+          <div v-if="languages" class="navbar-item" >
+            <span v-for="(locale, index) in $i18n.availableLocales" :key="`locale-${locale}`">
               <a
-                v-if="$i18next.resolvedLanguage !== lng"
-                @click="$i18next.changeLanguage(lng)"
+                v-if="$i18n.locale !== locale"
+                @click="$i18n.locale = locale"
               >
-                {{ languages[lng].nativeName }}
+                {{ locale.toUpperCase() }}
               </a>
-              <strong v-if="$i18next.resolvedLanguage === lng">
-                {{ languages[lng].nativeName }}
+              <strong v-if="$i18n.locale === locale">
+                {{ locale.toUpperCase() }}
               </strong>
-              <span v-if="index < Object.keys(languages).length - 1"
+              <span v-if="index < $i18n.availableLocales.length - 1"
                 >&nbsp;|&nbsp;</span
               >
             </span>

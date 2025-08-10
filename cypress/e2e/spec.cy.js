@@ -1,7 +1,7 @@
 // https://docs.cypress.io/api/introduction/api.html
 
 describe('Inventory Companion Test', () => {
-  before(() => {
+  beforeEach(() => {
     cy.clearAllLocalStorage();
   });
 

@@ -20,7 +20,6 @@ export default {
           alt="Inventory Companion application logo of a brown leather schoolbag and blue magic book of spells."
           src="./assets/images/logo.svg"
         />
-        <h1>Loading...</h1>
       </div>
     </template>
   </Suspense>

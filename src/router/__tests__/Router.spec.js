@@ -1,7 +1,7 @@
 import { describe, it, expect, vi } from 'vitest';
 
 import App from '../../LoaderSuspenser.vue';
-import i18n from '../../utils/i18n';
+import i18n from '../../i18n';
 
 import { mount } from '@vue/test-utils';
 import { createRouter, createMemoryHistory } from 'vue-router';

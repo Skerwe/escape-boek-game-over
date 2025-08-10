@@ -1,6 +1,8 @@
 /** @type {import('vite').UserConfig} */
 import { fileURLToPath, URL } from 'node:url';
+import { resolve, dirname } from 'node:path'
 import path from 'path';
+import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
@@ -37,7 +39,14 @@ export default defineConfig({
       output: { assetFileNames: 'assets/[name]-[hash][extname]' },
     },
   },
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    VueI18nPlugin({
+      /* options */
+      // locale messages resource pre-compile option
+      include: resolve(dirname(fileURLToPath(import.meta.url)), './src/i18n/locales/**'),
+    }),
+  ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
