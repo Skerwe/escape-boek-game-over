@@ -1,36 +1,82 @@
-import { defineConfig, globalIgnores } from 'eslint/config'
+// eslint.config.js
+import vue from 'eslint-plugin-vue';
+import vueParser from 'vue-eslint-parser';
+import prettier from 'eslint-plugin-prettier';
+import cypress from 'eslint-plugin-cypress';
+import globals from 'globals';
 
-import eslint from '@eslint/js'
-import eslintConfigPrettier from 'eslint-config-prettier'
-import pluginCypress from 'eslint-plugin-cypress'
-import pluginVue from 'eslint-plugin-vue'
-import globals from 'globals'
-
-
-export default defineConfig([
-  { files: ['src/**/*.js'], languageOptions: { globals: globals.browser } },
-  { files: ['src/**/*.js'], plugins: { eslint }, extends: ['eslint/recommended'] },
+export default [
+  // Global ignores
   {
-    files: ['cypress/e2e/**.{cy,spec}.{js,ts,jsx,tsx}'],
-    plugins: {
-      cypress: pluginCypress,
-    },
-    rules: {
-      'cypress/unsafe-to-chain-command': 'error',
-    },
+    ignores: [
+      '**/cypress.config.js',
+      'public/cordova.js',
+      'www/*',
+      'build/*',
+      'platforms/*',
+      'coverage/*',
+    ],
   },
-  ...pluginVue.configs['flat/recommended'],
+
+  // Base JavaScript/Node settings
   {
-    rules: {
-      // override/add rules settings here, such as:
-      // 'vue/no-unused-vars': 'error'
-    },
     languageOptions: {
+      ecmaVersion: 'latest',
       sourceType: 'module',
       globals: {
-        ...globals.browser
-      }
-    }
+        ...globals.browser,
+        ...globals.node,
+      },
+    },
+    rules: {
+      'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+      'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    },
   },
-  globalIgnores(['**/cypress.config.js', 'public/cordova.js', 'www/*', 'build/*', 'platforms/*', 'coverage/*'])
-])
+
+  // Vue rules with Babel parser and no config file requirement
+  {
+    files: ['**/*.vue'],
+    languageOptions: {
+      parser: vueParser,
+      parserOptions: {
+        parser: '@babel/eslint-parser',
+        requireConfigFile: false,
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+      },
+    },
+    plugins: { vue },
+    ...vue.configs['vue3-recommended'],
+  },
+
+  // Prettier integration with single quotes enforced
+  {
+    plugins: { prettier },
+    rules: {
+      ...prettier.configs.recommended.rules,
+      'prettier/prettier': [
+        'error',
+        {
+          singleQuote: true,
+        },
+      ],
+    },
+  },
+
+  // Cypress test files
+  {
+    files: ['cypress/**/*.js'],
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+        ...globals.mocha,
+      },
+    },
+    plugins: { cypress },
+    rules: {
+      ...cypress.configs.recommended.rules,
+    },
+  },
+];
