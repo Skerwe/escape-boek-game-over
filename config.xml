@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0"
 id="dev.indiesagtewerke.escapeboek.gameover"
-version="1.1.0"
-android-versionCode="10100"
+version="1.2.0"
+android-versionCode="10200"
 android-packageName="indiesagtewerke.escapeboek.gameover.inventorycompanion"
 android-activityName="InventoryCompanion">
     <name short="Inventory Companion">Escape Boek Game Over - Inventory Companion</name>
@@ -15,6 +15,6 @@ android-activityName="InventoryCompanion">
 
     <preference name="AndroidLaunchMode" value="singleInstance"/>
     <preference name="Orientation" value="portrait"/>
-    <preference name="android-targetSdkVersion" value="34" />
+    <preference name="android-targetSdkVersion" value="35" />
     <icon src="resources/application-icon.png" width="72" height="72" density="hdpi" />
 </widget>

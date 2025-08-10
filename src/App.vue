@@ -23,11 +23,7 @@ export default {
   },
   data() {
     return {
-      version: 'v1.1.0',
-      languages: {
-        en: { nativeName: 'EN' },
-        nl: { nativeName: 'NL' },
-      },
+      version: 'v1.2.0',
     };
   },
 };
