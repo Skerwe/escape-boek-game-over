@@ -1,12 +1,11 @@
-import { defineStore } from "pinia";
-import { get, set } from "idb-keyval";
+import { defineStore } from 'pinia';
+import { get, set } from 'idb-keyval';
 import {
   LOCATION_STORE_NAME,
   MAX_LOCATION_VALUE,
-} from "./store-configurations";
+} from './store-configurations';
 
-export const useLocationStore = defineStore({
-  id: "location",
+export const useLocationStore = defineStore('location', {
   state: () => ({
     location: 0,
   }),

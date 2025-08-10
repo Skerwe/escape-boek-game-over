@@ -1,20 +1,20 @@
-import { describe, it, expect, vi } from "vitest";
+import { describe, it, expect, vi } from 'vitest';
 
-import { createTestingPinia } from "@pinia/testing";
-import { useLocationStore } from "../../stores/location";
+import { createTestingPinia } from '@pinia/testing';
+import { useLocationStore } from '../../stores/location';
 
-import { mount } from "@vue/test-utils";
-import CurrentLocation from "../CurrentLocation.vue";
+import { mount } from '@vue/test-utils';
+import CurrentLocation from '../CurrentLocation.vue';
 
-import "fake-indexeddb/auto";
+import 'fake-indexeddb/auto';
 
-describe("CurrentLocation", () => {
+describe('CurrentLocation', () => {
   const CurrentLocationComponent = {
     components: { CurrentLocation },
     template: `<div><CurrentLocation /></div>`,
   };
 
-  it("renders properly", () => {
+  it('renders properly', () => {
     const wrapper = mount(CurrentLocationComponent, {
       global: {
         plugins: [
@@ -27,10 +27,10 @@ describe("CurrentLocation", () => {
         },
       },
     });
-    expect(wrapper.text()).toContain("currentLocation");
+    expect(wrapper.text()).toContain('currentLocation');
   });
 
-  it("increment current location", () => {
+  it('increment current location', () => {
     const wrapper = mount(CurrentLocationComponent, {
       global: {
         plugins: [
@@ -43,13 +43,13 @@ describe("CurrentLocation", () => {
         },
       },
     });
-    wrapper.get('[data-cy="increment-button"]').trigger("click");
+    wrapper.get('[data-cy="increment-button"]').trigger('click');
 
     const store = useLocationStore();
     expect(store.increment).toHaveBeenCalledTimes(1);
   });
 
-  it("decrement current location", () => {
+  it('decrement current location', () => {
     const wrapper = mount(CurrentLocationComponent, {
       global: {
         plugins: [
@@ -62,7 +62,7 @@ describe("CurrentLocation", () => {
         },
       },
     });
-    wrapper.get('[data-cy="decrement-button"]').trigger("click");
+    wrapper.get('[data-cy="decrement-button"]').trigger('click');
 
     const store = useLocationStore();
     expect(store.decrement).toHaveBeenCalledTimes(1);

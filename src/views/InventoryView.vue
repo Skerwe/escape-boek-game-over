@@ -1,6 +1,6 @@
 <script>
-import { useInventoryStore } from "@/stores/inventory";
-import { storeToRefs } from "pinia";
+import { useInventoryStore } from '@/stores/inventory';
+import { storeToRefs } from 'pinia';
 
 export default {
   setup() {
@@ -20,18 +20,18 @@ export default {
 <template>
   <main class="mx-5 mt-3 mb-5">
     <h2 class="title is-4 has-text-centered mt-2 mb-4">
-      {{ $t("pageInventory") }}
+      {{ $t('pageInventory') }}
     </h2>
     <div class="columns is-gapless is-centered">
       <div class="column is-narrow">
-        <div class="field" v-for="(item, index) in inventory" :key="index">
+        <div v-for="(item, index) in inventory" :key="index" class="field">
           <div class="control">
             <input
+              :id="item.handle"
+              v-model="item.checked"
               type="checkbox"
               data-cy="inventory-checkbox"
-              :id="item.handle"
               :name="item.handle"
-              v-model="item.checked"
               @change="save()"
             />
             <label :for="item.handle" class="checkbox pl-2">{{

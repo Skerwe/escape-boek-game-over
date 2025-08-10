@@ -1,5 +1,5 @@
 <script>
-import { useLocationStore } from "@/stores/location";
+import { useLocationStore } from '@/stores/location';
 
 export default {
   setup() {
@@ -15,7 +15,7 @@ export default {
 
 <template>
   <div id="current-location" class="mb-3">
-    <span class="px-1">{{ $t("currentLocation") }}:</span>
+    <span class="px-1">{{ $t('currentLocation') }}:</span>
     <button data-cy="decrement-button" @click="currentLocation.decrement">
       -
     </button>
