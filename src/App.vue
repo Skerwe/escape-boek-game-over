@@ -78,7 +78,7 @@ export default {
         </div>
 
         <div class="navbar-end">
-          <div v-if="languages" class="navbar-item" >
+          <div class="navbar-item" >
             <span v-for="(locale, index) in $i18n.availableLocales" :key="`locale-${locale}`">
               <a
                 v-if="$i18n.locale !== locale"
