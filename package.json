@@ -5,7 +5,6 @@
   "private": "true",
   "description": "A digital inventory companion mobile application for the choose your own adventure 'Escape Boek: Game Over'.",
   "author": "Indie Sagtewerke <support@indiesagtewerke.dev> (https://indiesagtewerke.dev)",
-  "type": "module",
   "scripts": {
     "docs": "docsify serve docs",
     "dev": "vite",
