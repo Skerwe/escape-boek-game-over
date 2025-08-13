@@ -22,7 +22,7 @@ export default {
     <h2 class="title is-4 has-text-centered mt-2 mb-4">
       {{ $t('pageInventory') }}
     </h2>
-    <div class="columns is-gapless is-centered">
+    <div class="columns is-centered">
       <div class="column is-narrow">
         <div v-for="(item, index) in inventory" :key="index" class="field">
           <div class="control">

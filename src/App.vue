@@ -52,9 +52,10 @@ export default {
         data-cy="burger-menu"
         @click="burgerToggel()"
       >
-        <span aria-hidden="true" />
-        <span aria-hidden="true" />
-        <span aria-hidden="true" />
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </a>
 
       <div id="navbarBasicExample" class="navbar-menu">
@@ -79,7 +80,7 @@ export default {
 
         <div class="navbar-end">
           <div class="navbar-item" >
-            <span v-for="(locale, index) in $i18n.availableLocales" :key="`locale-${locale}`">
+            <template v-for="(locale, index) in $i18n.availableLocales" :key="`locale-${locale}`">
               <a
                 v-if="$i18n.locale !== locale"
                 @click="$i18n.locale = locale"
@@ -89,10 +90,8 @@ export default {
               <strong v-if="$i18n.locale === locale">
                 {{ locale.toUpperCase() }}
               </strong>
-              <span v-if="index < $i18n.availableLocales.length - 1"
-                >&nbsp;|&nbsp;</span
-              >
-            </span>
+              <span v-if="index < $i18n.availableLocales.length - 1" class="px-2">|</span>
+            </template>
           </div>
         </div>
       </div>
