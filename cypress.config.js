@@ -1,4 +1,4 @@
-import { defineConfig } from 'cypress'
+import { defineConfig } from "cypress";
 
 export default defineConfig({
   e2e: {
@@ -8,4 +8,11 @@ export default defineConfig({
       // e2e testing node events setup code
     },
   },
-})
+
+  component: {
+    devServer: {
+      framework: "vue",
+      bundler: "vite",
+    },
+  },
+});
