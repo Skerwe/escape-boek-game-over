@@ -7,6 +7,7 @@ export default defineConfig({
     setupNodeEvents(on, config) {
       // e2e testing node events setup code
     },
+    allowCypressEnv: false,
   },
 
   component: {
