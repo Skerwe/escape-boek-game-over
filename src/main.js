@@ -21,7 +21,7 @@ function onDeviceReady() {
 
   app.use(pinia);
   app.use(router);
-  app.use(i18n)
+  app.use(i18n);
 
   app.mount('#app');
 }

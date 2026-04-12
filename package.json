@@ -15,7 +15,7 @@
     "test:e2e:ci": "start-server-and-test preview http://localhost:4173/ 'cypress run --e2e'",
     "coverage": "vitest run --coverage",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix",
-    "lint:docs": "markdownlint-cli2 \"**/*.md\" \"#node_modules\"",
+    "lint:docs": "markdownlint-cli2 \"**/*.md\" \"#node_modules\" \"#.github\" \"#CHANGELOG.md\"",
     "cypress:open": "cypress open"
   },
   "keywords": [

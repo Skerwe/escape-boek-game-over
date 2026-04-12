@@ -29,12 +29,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 Make sure these are installed first.
 
-- [Android SDk][android] for Android 14 (API level 34)
+- [Android SDk][android] for Android 16 (API level 36)
 - [Node.js][node]
 - [npm][npm]
 - [Cordova][cordova]
 - [Java 17 LTS][java]
-- [Gradle 8.10.2][gradle]
+- [Gradle 8.14.2][gradle]
 
 NOTE: You should install Apache Cordova globally, `npm install -g cordova`
 

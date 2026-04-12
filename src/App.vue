@@ -2,7 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router';
 import CurrentLocation from '@/components/CurrentLocation.vue';
 
-import { useI18n } from 'vue-i18n'
+import { useI18n } from 'vue-i18n';
 import $ from 'jquery';
 
 export default {
@@ -18,7 +18,7 @@ export default {
       $('.navbar-menu').toggleClass('is-active');
     };
 
-    const { t } = useI18n()
+    const { t } = useI18n();
     return { burgerToggel, t };
   },
   data() {
@@ -79,18 +79,22 @@ export default {
         </div>
 
         <div class="navbar-end">
-          <div class="navbar-item" >
-            <template v-for="(locale, index) in $i18n.availableLocales" :key="`locale-${locale}`">
-              <a
-                v-if="$i18n.locale !== locale"
-                @click="$i18n.locale = locale"
-              >
+          <div class="navbar-item">
+            <template
+              v-for="(locale, index) in $i18n.availableLocales"
+              :key="`locale-${locale}`"
+            >
+              <a v-if="$i18n.locale !== locale" @click="$i18n.locale = locale">
                 {{ locale.toUpperCase() }}
               </a>
               <strong v-if="$i18n.locale === locale">
                 {{ locale.toUpperCase() }}
               </strong>
-              <span v-if="index < $i18n.availableLocales.length - 1" class="px-2">|</span>
+              <span
+                v-if="index < $i18n.availableLocales.length - 1"
+                class="px-2"
+                >|</span
+              >
             </template>
           </div>
         </div>
